@@ -217,7 +217,7 @@ export default function BillboardUppsalaPage() {
               <p className="text-sm md:text-base text-gray-700 text-center leading-relaxed max-w-xs">
                 <span className="font-semibold text-accent">Passion för skyltar, människor och magiska ögonblick.</span><br /><br />
                 Anna är inte bara vår kontaktperson i Uppsala – hon är själva hjärtat bakom varje lyckad kampanj. Med ett öga för detaljer och en fingertoppskänsla för vad som verkligen berör, guidar hon både annonsörer och markägare genom hela processen – från första idé till färdig, lysande skylt.<br /><br />
-                Hennes drivkraft? Att skapa möten mellan varumärken och verkliga människor, där varje budskap får chansen att bli en del av stadens puls. Anna tror på kraften i det limbiska systemet: känslor, minnen och intryck som fastnar – och hon vet exakt hur en välplacerad skylt kan väcka just den där känslan av "det här vill jag vara en del av".<br /><br />
+                Hennes drivkraft? Att skapa möten mellan varumärken och verkliga människor, där varje budskap får chansen att bli en del av stadens puls. Anna tror på kraften i det limbiska systemet: känslor, minnen och intryck som fastnar – och hon vet exakt hur en välplacerad skylt kan väcka just den där känslan av &quot;det här vill jag vara en del av&quot;.<br /><br />
                 När hon inte hjälper kunder att synas, hittar du henne ofta på cykel genom Uppsala, alltid med ett leende och nya idéer i bakfickan. Behöver du någon som lyssnar, inspirerar och levererar – då är Anna din person.
               </p>
             </div>
