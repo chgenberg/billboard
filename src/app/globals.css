@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #0066ff;
+  --sand: #f7f3ef;
 }
 
 @theme inline {
@@ -12,15 +14,49 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadein {
+  animation: fadein 1.2s cubic-bezier(.4,0,.2,1) both;
+}
+
+/* Extra minimalistiska fokus-states */
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+input:focus, textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--sand), 0 1px 4px 0 rgba(0,0,0,0.04);
+  border-color: var(--sand);
+}
+
+/* Subtilare accent på knappar */
+button, .bg-accent {
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+/* Dölj Next.js route indicator nere till vänster */
+.nextjs-portal {
+  display: none !important;
+}
+
+/* Ta bort clear/cancel/calendar-knappar i inputs (Safari/Edge/Chrome) */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration,
+input::-webkit-clear-button,
+input::-webkit-calendar-picker-indicator {
+  display: none !important;
+  -webkit-appearance: none !important;
 }
