@@ -71,7 +71,7 @@ export default function BillboardUppsalaPage() {
             priority
           />
           <div className="flex gap-3 mb-4">
-            {billboard.images.map((img, i) => (
+            {billboard.images.map((img) => (
               <Image
                 key={img}
                 src={img}
@@ -123,7 +123,7 @@ export default function BillboardUppsalaPage() {
       {/* Description section */}
       <div className="w-full max-w-4xl mx-auto mt-12">
         <div className="bg-white/80 rounded-2xl p-6 shadow-sm border border-sand-light">
-          <h2 className="text-lg md:text-xl font-bold uppercase tracking-wide mb-4 text-gray-900">Beskrivning av "{billboard.title}"</h2>
+          <h2 className="text-lg md:text-xl font-bold uppercase tracking-wide mb-4 text-gray-900">Beskrivning av &quot;{billboard.title}&quot;</h2>
           <p className="text-gray-800 text-sm md:text-base leading-relaxed whitespace-pre-line">
             {billboard.description}
           </p>

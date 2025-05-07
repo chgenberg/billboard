@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 const faqs = [
   { q: "Hur lång tid tar det från bokning till att min kampanj syns?", a: "Vanligtvis 3–7 arbetsdagar beroende på om du laddar upp färdigt material eller beställer designhjälp via oss." },
@@ -43,7 +44,7 @@ export default function FAQPage() {
       </svg>
       <div className="relative z-10 w-full max-w-3xl mx-auto flex flex-col items-center">
         <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide mb-2 text-gray-900 text-center flex items-center justify-center gap-2">HAR DU FRÅGOR PÅ TUNGAN?
-          <img src="/bee.png" alt="Bee" width={36} height={36} style={{display:'inline',marginLeft:'8px'}} />
+          <Image src="/bee.png" alt="Bee" width={36} height={36} style={{display:'inline',marginLeft:'8px'}} />
         </h2>
         <p className="text-sm md:text-base text-gray-700 text-center mb-8 max-w-2xl leading-relaxed">
           Vi vet – när idéer ska upp i storformat kan det dyka upp både vardagsfunderingar och små nippriga detaljer. Därför har vi samlat de vanligaste frågorna och svaren här nedanför. Ta en stund, scrolla igenom – kanske hittar du precis det du undrar över.<br /><br />

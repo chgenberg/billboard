@@ -17,7 +17,7 @@ export default function AboutPage() {
             Det började med en bilresa en dimmig aprilmorgon längs E20. Vi såg samma åkrar, samma skogsdungar – men också alla tomma skyltstolpar och oanvända vägkanter. Där och då föddes tanken: Tänk om varje meter mark kunde bära ett budskap som tjänar både den som äger marken och den som vill nå ut? Vi skissade i ett kafé i Mariestad, samlade modet i ett lada-kontor utanför Uppsala och lanserade plattformen våren därpå. Sedan dess har varje ny skylt varit ett bevis på att idéer kan växa lika naturligt som råg och gran.
           </p>
           <div style={{position:'absolute',right:12,bottom:12}}>
-            <img src="/bee.png" alt="Bee" width={32} height={32} style={{display:'inline'}} />
+            <Image src="/bee.png" alt="Bee" width={32} height={32} style={{display:'inline'}} />
           </div>
         </BlobSection>
         <BlobSection className="md:ml-32" blobClass="h-[200px] w-[500px]" >
