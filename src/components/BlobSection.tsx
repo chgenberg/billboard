@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-export default function BlobSection({ children, className = '', blobClass = '', blobColor = '#f7f3ef' }) {
+type BlobSectionProps = {
+  children: ReactNode;
+  className?: string;
+  blobClass?: string;
+  blobColor?: string;
+};
+
+export default function BlobSection({ children, className = '', blobClass = '', blobColor = '#f7f3ef' }: BlobSectionProps) {
   return (
     <div className={`relative flex flex-col items-center justify-center py-8 px-6 my-8 ${className}`}>
       <svg
